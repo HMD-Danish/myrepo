@@ -1,16 +1,7 @@
 version: 0.2
-<<<<<<< HEAD
 
-phases:
-  build:
-    commands:
-      - echo "Deploying static website to S3"
-      - aws s3 sync website/ s3://mydan-amazon-aws-bucket --delete
-=======
 phases:
  build:
    commands:
      - echo "Deploying"
      - aws s3 sync website/ s3://2472582-danish-12
-
->>>>>>> 644e4d1 (initial commit)
