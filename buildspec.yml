@@ -1,6 +1,7 @@
 version: 0.2
+
 phases:
- build:
-   commands:
-     - echo "Deploying"
-     - aws s3 sync website/ s3://mydan-amazon-aws-bucket
+  build:
+    commands:
+      - echo "Deploying static website to S3"
+      - aws s3 sync website/ s3://mydan-amazon-aws-bucket --delete
